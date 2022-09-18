@@ -9749,7 +9749,7 @@ a.text-dark:hover, a.text-dark:focus {
 .back-to-top {
   position: fixed;
   display: none;
-  right: 70px;
+  right: 100px;
   bottom: 30px;
   z-index: 11;
   animation: action 1s infinite alternate;
