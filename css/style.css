@@ -9864,32 +9864,34 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   list-style-type: none;
 }
-.banner {
-  background: #009579;
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+
+  transition: 400ms;
 }
 
-.banner__content {
-  padding: 16px;
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
+.cookie-container.active {
+  bottom: 0;
 }
 
-.banner__text {
-  flex-grow: 1;
-  line-height: 1.4;
-  font-family: "Quicksand", sans-serif;
+.cookie-container a {
+  color: #f5f6fa;
 }
 
-.banner__close {
-  background: none;
-  border: none;
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
   cursor: pointer;
 }
-
-.banner__text,
-.banner__close > span {
-  color: #ffffff;
-}
-
